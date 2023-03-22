@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+
+.container {
+  height: 50em;
+  width: 100em;
+  border-radius: 1em;
+  border: 0.3em solid;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.div1 {
+  height: 98%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 5em 1em;
+}
+.div1 .boxgauche1 {
+  height: 4em;
+}
+.div1 .boxgauche1 input {
+  height: 60%;
+  width: 90%;
+  margin: 1em;
+  border-radius: 1em;
+  background-color: none;
+}
+.div1 .boxgauche2 {
+  height: 12em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.div1 .boxgauche2 button {
+  height: 35%;
+  width: 50%;
+  border-radius: 1.3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0.7em 0;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
+.div1 .boxgauche2 button div {
+  width: 50%;
+}
+.div1 .boxgauche2 button div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  width: 18%;
+  background-color: orange;
+  border-radius: 100%;
+}
+.div1 .boxgauche2 button :last-child {
+  display: flex;
+  justify-content: center;
+}
+.div1 :last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div1 :last-child .input2 {
+  height: 2.5em;
+  width: 80%;
+  border: none;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+.div1 :last-child select {
+  height: 2.5em;
+  width: 2em;
+  border: none;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.div2 {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: #302d2d;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+.div2 .enfant1 {
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.div2 .enfant1 div {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div2 .enfant1 h1 {
+  display: flex;
+}
+.div2 .enfant1 h1 div {
+  border: none;
+}
+.div2 .enfant1 .modeLightSombre {
+  justify-content: end;
+}
+.div2 .enfant1 .modeLightSombre div {
+  width: 20%;
+  height: 40%;
+  border-radius: 2em;
+  background-color: white;
+}
+.div2 .enfant1 .modeLightSombre div i {
+  transform: translatex(-80%);
+  font-size: 1.5rem;
+}
+.div2 .enfant1 .creat {
+  position: absolute;
+  top: 29%;
+  left: 45%;
+  height: 58%;
+  width: 40%;
+  flex-direction: column;
+  display: none;
+  z-index: 9999999;
+}
+.div2 .enfant1 .creat .creatChild1 {
+  border: 0.1em solid;
+  width: 100%;
+  height: 20%;
+  background-color: #302d2d;
+  color: white;
+  font-size: 1.4rem;
+}
+.div2 .enfant1 .creat .creatChild2 {
+  border: 0.1em solid;
+  width: 100%;
+  height: 90%;
+  background-color: rgba(255, 255, 255, 0.308);
+  display: flex;
+  flex-direction: column;
+}
+.div2 .enfant1 .creat .creatChild2 div {
+  display: flex;
+  justify-content: space-between;
+}
+.div2 .enfant1 .creat .creatChild2 div select {
+  width: 50%;
+  height: 40%;
+}
+.div2 .enfant1 .creat .creatChild2 div span {
+  width: 40%;
+  display: flex;
+  height: 50%;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+.div2 .enfant1 .creat .creatChild2 p {
+  display: none;
+}
+.div2 .enfant1 .creat .creatChild2 .span1 {
+  position: absolute;
+  color: red;
+  height: 10%;
+  width: 50%;
+  top: 20%;
+  left: 50%;
+}
+.div2 .enfant1 .creat .creatChild2 .span2 {
+  position: absolute;
+  color: red;
+  height: 10%;
+  width: 50%;
+  top: 35%;
+  left: 50%;
+}
+.div2 .enfant1 .creat .creatChild2 .span3 {
+  position: absolute;
+  color: red;
+  height: 10%;
+  width: 50%;
+  top: 48%;
+  left: 50%;
+}
+.div2 .enfant1 .creat .creatChild2 .span4 {
+  position: absolute;
+  color: red;
+  height: 10%;
+  width: 50%;
+  top: 60%;
+  left: 50%;
+}
+.div2 .enfant1 .creat .creatChild2 .span5 {
+  position: absolute;
+  color: red;
+  height: 10%;
+  width: 50%;
+  top: 75%;
+  left: 50%;
+}
+.div2 .enfant1 .creat .creatChild2 .span6 {
+  position: absolute;
+  height: 10%;
+  width: 50%;
+  top: 89%;
+  left: 50%;
+}
+.div2 .enfant1 .creat .creatChild2 .smallRoom {
+  color: red;
+}
+.div2 .enfant1 .creat .creatChild2 .avertiSelect {
+  position: absolute;
+  color: red;
+  height: 10%;
+  width: 70%;
+  top: 100%;
+  left: 30%;
+}
+.div2 .enfant1 .creat .creatChild3 {
+  border: 0.1em solid;
+  width: 100%;
+  height: 20%;
+  background-color: #302d2d;
+  display: flex;
+  justify-content: space-evenly;
+}
+.div2 .enfant1 .creat .creatChild3 button {
+  height: 50%;
+  width: 40%;
+  border-radius: 1em;
+  font-size: 1.2rem;
+}
+.div2 .enfant2 {
+  height: 5%;
+  background-color: #5a5759;
+  border-radius: 1em;
+  color: white;
+}
+.div2 .enfant2 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5em 3em;
+  transform: translateX(8%);
+}
+.div2 .enfant2 li {
+  list-style: none;
+}
+
+.enfant3 {
+  height: 100%;
+}
+.enfant3 div {
+  height: 16.7%;
+  border: 0.1em solid;
+  display: flex;
+}
+.enfant3 div div:first-child {
+  width: 15%;
+  height: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+.enfant3 div div:last-child {
+  position: relative;
+  width: 85%;
+  height: 100%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+}
+.enfant3 div div:last-child div {
+  position: absolute;
+  height: 100%;
+  width: 25%;
+  margin: 0%;
+  border-radius: 1em;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.enfant3 div .jour {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border-color: none;
+}
+.enfant3 div .jour i {
+  color: green;
+  cursor: pointer;
+}
+
+.creatediv {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: red;
+  padding: 1.3rem;
+}
+.creatediv div {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

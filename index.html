@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>PLanning</title>
+</head>
+<body>
+    
+        <div class="container">
+                            <div class="div1">
+                                        <div class="boxgauche1">
+                                                <input type="text"  class="input1" >
+                                        </div>
+                                        <div class="boxgauche2">
+                                                    <button class="Enseignant button" id="enseignant">
+                                                        <div> <i class="fa-solid fa-person-chalkboard"></i></div>
+                                                       <div class="number"></div>
+                                                       <div>Enseignants</div>
+                                                       <div disabled="true">
+                                                           <i class="fa-solid fa-plus"></i>
+                                                    </div>
+                                                    </button>
+                                                    <button class="salle button" id="salles">
+                                                       <div> <i class="fa-solid fa-house"></i></div>
+                                                       <div class="number"></div>
+                                                       <div>Salles</div>
+                                                       <div disabled="true">
+                                                           <i class="fa-solid fa-plus"></i>
+                                                    </div>
+                                                    </button>
+                                                    <button class="classe button" id="Classes">
+                                                        <div> <i class="fa-solid fa-users"></i></div>
+                                                        <div class="number"></div>
+                                                        <div>Classes</div>
+                                                        <div disabled="true">
+                                                            <i class="fa-solid fa-plus" ></i>
+                                                     </div>
+                                                    </button>
+                                                    <button class="module button" id="Module">
+                                                        <div> <i class="fa-solid fa-trash" ></i></div>
+                                                        <div class="number"></div>
+                                                        <div>Modules</div>
+                                                        <div disabled="true">
+                                                            <i class="fa-solid fa-plus" ></i>
+                                                     </div>
+                                                    </button>
+                                                   
+                                                   
+
+                                        </div>
+                                        <div class="boxgauche3">
+                                                <!-- <input type="text" class="input2" >
+                                                <select name="deroulement" id="select"></select> -->
+                                                <select name="" id="" class="input2" onchange = "getSelectvalue(input2);">
+                                                  
+                                                </select>
+                                        </div>
+                                        
+                            </div>
+                            <div class="div2">
+                                                    <div class="enfant1">
+                                                            <div class="planning">
+                                                                    <h1>Planning:<div class="aly"></div></h1>
+                                                            </div>
+                                                            <div class="creat">
+                                                                        <div class="creatChild1">NOUVELLE PLANIFICATION</div>
+                                                                        <div class="creatChild2">
+                                                                                    <p class="span1" >champs non remplie</p>
+                                                                                    <div><span>Veuiller choisir un module</span><select name="" id="creatnew1" class="creatNew" >
+                                                                                    </select></div>
+                                                                                    <p class="span2">champs non remplie</p>
+                                                                                <div><span>Veuiller choisir un enseignant</span><select name="" id="creatnew2" class="creatNew">
+                                                                                </select> </div>
+                                                                                <p class="span3">champs non remplie</p>
+                                                                              <div> <span> Veuiller choisir une salle</span><select name="" id="creatnew3" class="creatNew">
+                                                                              </select> </div>
+                                                                              <p class="span4">champs non remplie</p>
+                                                                               <div> <span>Veuiller choisir l'heure de début du cours</span><select name="" id="creatnew4" class="creatNew">
+                                                                               </select> </div>
+                                                                               <p class="span5">champs non remplie</p>
+                                                                               <div> <span>Veuiller choisir l'heure de fin du cours</span> <select name="" id="creatnew5" class="creatNew">
+
+                                                                               </select></div>
+                                                                               <p class="span6" >champs non remplie</p>
+                                                                                    <div><span>Veuiller choisir une classe</span><select name="" id="creatnew6" class="creatNew" >
+                                                                                    </select></div>
+                                                                                <p class="smallRoom">Cette salle ne peut contenir un tel effectif</p>
+                                                                                <p class="avertiSelect">Veuiller remplir tous les champs</p>
+                                                                               <span id ="span"></span>
+
+                                                                                   
+                                                                        </div>
+                                                                        <div class="creatChild3">
+                                                                                <button class="Selectionner">Selectionner</button>
+                                                                                <button class = "retour">Retour</button>
+                                                                        </div>
+                                                            </div>    
+                                                            <div class="modeLightSombre">
+                                                                    <div class="blockMode">
+                                                                        <i class="fa-sharp fa-solid fa-circle"></i>
+                                                                    </div>
+                                                            </div>    
+                                                                                                      
+                                                    </div>
+                                                    <div class="enfant2">
+                                                            <ul>
+                                                                <li>08H</li>
+                                                                <li>09H</li>
+                                                                <li>10H</li>
+                                                                <li>11H</li>
+                                                                <li>12H</li>
+                                                                <li>13H</li>
+                                                                <li>14H</li>
+                                                                <li>15H</li>
+                                                                <li>16H</li>
+                                                                <li>17H</li>
+                                                                
+                                                            </ul>
+                                                    </div>
+                                                    <div class="enfant3">
+                                                            <div class="lundi" id="day1">
+                                                                        <div class="jour">
+                                                                                <h3>lundi</h3>
+                                                                                <i class="fa-solid fa-plus plus" id="jour1"></i>
+                                                                        </div>
+
+                                                                        <div class="cours1">
+                                                                                
+                                                                        </div>
+                                                            </div>
+                                                            <div class="mardi">
+                                                                <div class="jour">
+                                                                    <h3>Mardi</h3>
+                                                                    <i class="fa-solid fa-plus plus" id="jour2"></i>
+                                                            </div>
+
+                                                            <div class="cours2">
+                                                                    <!-- <div>zer</div> -->
+                                                            </div>
+                                                            </div>
+                                                            <div class="mercredi">
+                                                                <div class="jour">
+                                                                    <h3>Mercredi</h3>
+                                                                    <i class="fa-solid fa-plus plus" id="jour3"></i>
+                                                            </div>
+
+                                                            <div class="cours3"></div>
+                                                            </div>
+                                                            <div class="jeudi">
+                                                                <div class="jour">
+                                                                    <h3>Jeudi</h3>
+                                                                    <i class="fa-solid fa-plus plus" id="jour4"></i>
+                                                            </div>
+
+                                                            <div class="cours4"></div>
+                                                            </div>
+                                                            <div class="vendredi">
+                                                                <div class="jour">
+                                                                    <h3>Vendredi</h3>
+                                                                    <i class="fa-solid fa-plus plus" id="jour5"></i>
+                                                            </div>
+
+                                                            <div class="cours5"></div>
+                                                            </div>
+                                                            <div class="samedi">
+                                                                <div class="jour">
+                                                                    <h3>Samedi</h3>
+                                                                    <i class="fa-solid fa-plus plus" id="jour6"></i>
+                                                                </div>
+                                                                <div class="cours6"></div>
+
+                                                            
+                                                            </div>
+
+                                                           
+                                                            
+                                                           
+                                                    </div>
+                            </div>
+                           
+        </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

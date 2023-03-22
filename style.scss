@@ -1,0 +1,481 @@
+
+
+
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+   
+}
+
+
+.container
+{
+    height: 50em;
+    width: 100em;
+    border-radius: 1em;
+    border: 0.3em solid;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ 
+    
+}
+
+.div1
+{
+    height: 98%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 5em 1em;
+    // border: 0.1em solid ;
+    .boxgauche1
+    {
+        height: 4em;
+        
+        input
+        {
+            height: 60%;
+            width: 90%;
+            margin: 1em;
+            border-radius: 1em;
+            background-color: none;
+        }
+    }
+    .boxgauche2
+    {
+        height: 12em;
+        // padding: 6em;
+        display: flex;
+        flex-wrap: wrap;
+        // gap:-1em;
+        // margin: .2em;
+        button 
+        {
+            height:35%;
+            width: 50%;
+            border-radius: 1.3em;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 0.7em 0;
+            background-color: grey;
+            color: white;
+            cursor: pointer;
+           
+
+            div
+            {
+                width: 50%;
+                
+               
+            }
+            div:nth-child(1)
+            {
+                display: flex;
+                justify-content: center;
+                height: 50%;
+                width: 18%;
+                background-color: orange;
+                border-radius: 100%;
+            }
+            :last-child
+            {
+                display: flex;
+                justify-content: center;
+               
+            }
+            
+        }
+        
+    }
+    :last-child
+    {
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border-radius:1em  ;
+        
+        .input2
+        {
+            height: 2.5em;
+            width:80%;
+            border: none;
+            border-top-left-radius: 1em;
+            border-bottom-left-radius: 1em;
+            
+          
+        }
+        select 
+        {
+            height: 2.5em;
+            width: 2em;
+            border: none;
+            border-top-right-radius: 1em;
+            border-bottom-right-radius: 1em;
+        }
+            
+            
+
+            
+       
+    }
+    
+}
+
+.div2
+{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: #302d2d;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+
+    .enfant1
+    {
+        height: 20%;
+        // border: 0.5em solid;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        div 
+        {
+            height: 80%;
+            // border: 0.2em solid;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1
+        {
+            display: flex;
+            
+            div 
+            {
+                border:none;
+            }
+        }
+        .modeLightSombre
+        {
+            
+            justify-content: end;
+            div
+            {
+                width: 20%;
+                height: 40%;
+                border-radius: 2em;
+                background-color: white;
+                i 
+                {
+                   
+                    transform: translatex(-80%);
+                    font-size: 1.5rem;
+                    
+                }
+            }
+        }
+        .creat
+        {
+            position: absolute;
+            top:29%;
+            left: 45%;
+            height: 58%;
+            width: 40%;
+            flex-direction: column;
+            display: none;
+            z-index: 9999999;
+
+            .creatChild1
+            {
+                border: 0.1em solid;
+                width: 100%;
+                height: 20%;
+                background-color:#302d2d ;
+                color: white;
+                font-size: 1.4rem;
+                
+            }
+            .creatChild2
+            {
+                border: 0.1em solid;
+                width: 100%;
+                height: 90%;
+                background-color: rgba(255, 255, 255, 0.308);
+                display: flex;
+                flex-direction: column;
+              div 
+              {
+                display: flex;
+                justify-content: space-between;
+
+                select 
+                {
+                    width: 50%;
+                    height: 40%;
+
+                }
+            span
+              {
+                  width: 40%;
+                  display: flex;
+                  height: 50%;
+                  justify-content: space-between;
+                  // align-content: flex-end;
+                  font-size: 1.2rem;
+                 
+              }
+               
+                
+              }
+              p 
+              {
+                display: none;
+              }
+              
+              .span1
+              {
+                 
+                //   background-color: red;
+                 position: absolute;
+                  color: red;
+                  height: 10%;
+                  width: 50%;
+                  top:20%;
+                  left: 50%;
+              }
+              .span2
+              {
+                 
+                //   background-color: red;
+                 position: absolute;
+                  color: red;
+                  height: 10%;
+                  width: 50%;
+                  top:35%;
+                  left: 50%;
+                  
+              }
+              .span3
+              {
+                 
+                //   background-color: red;
+                 position: absolute;
+                  color:red ;
+                  height: 10%;
+                  width: 50%;
+                  top:48%;
+                  left: 50%;
+                  
+              }
+              .span4
+              {
+                 
+                //   background-color: red;
+                 position: absolute;
+                  color: red;
+                  height: 10%;
+                  width: 50%;
+                  top:60%;
+                  left: 50%;
+                  
+              }
+              .span5
+              {
+                 
+                //   background-color: red;
+                 position: absolute;
+                  color: red;
+                  height: 10%;
+                  width: 50%;
+                  top:75%;
+                  left: 50%;
+                  
+              }
+              .span6
+              {
+                 
+                //   background-color: red;
+                 position: absolute;
+                //   color: red;
+                  height: 10%;
+                  width: 50%;
+                  top:89%;
+                  left: 50%;
+                  
+              }
+              .smallRoom
+              {
+                
+                color: red;
+              }
+              .avertiSelect
+              {
+                position: absolute;
+                color: red;
+                height: 10%;
+                width: 70%;
+                top:100%;
+                left: 30%;
+              }
+                
+
+                
+            }
+            .creatChild3
+            {
+                border: 0.1em solid;
+                width: 100%;
+                height: 20%;
+                background-color: #302d2d;
+                display: flex;
+                justify-content: space-evenly;
+                button 
+                {
+                    height: 50%;
+                    width: 40%;
+                    border-radius: 1em ;
+                    font-size: 1.2rem;
+                }
+               
+            }
+            
+    
+        }
+           
+    }
+    .enfant2
+    {
+        height: 5%;
+        background-color: #5a5759;
+        border-radius: 1em;
+        color: white;
+        
+        ul 
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding:  0.5em 3em;
+            transform: translateX(8%);
+        }
+        li 
+        {
+            list-style: none;
+        }
+    }
+
+
+
+}
+
+.enfant3
+{
+    
+    height: 100%;
+    // border-radius: 1em;
+    div 
+    {
+        height: 16.7%;
+        border: 0.1em solid;
+        // border-radius: 1em ;
+        display: flex;
+        div:first-child
+        {
+            width: 15%;
+            height: 100%;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: 1em;
+            border-bottom-left-radius:1em ;
+            
+            // border: none;
+           
+          
+            
+        }
+       
+        div:last-child
+        {
+            position: relative;
+            width: 85%;
+            height: 100%;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 1em;
+            border-bottom-right-radius: 1em;
+            background-color: grey;
+            display: flex;
+            align-items: center;
+            div 
+            {
+                
+                position:absolute;
+                height: 100%;
+                width: 25%;
+                margin: 0%;
+                border-radius: 1em;
+                background-color: red;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+             
+            }
+            
+        }
+        .jour
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: 1em;
+            border-bottom-left-radius:1em ;
+            border-color: none;
+           
+            i 
+            {
+                color: green;
+                cursor: pointer;
+            }
+           
+            
+        }
+        // .cours2
+        // {
+        //     background-color: blue;
+        // }
+    }
+}
+
+.creatediv
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: red;
+    padding: 1.3rem;
+    div
+    {
+        display:none;
+    }    
+}
